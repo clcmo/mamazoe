@@ -1,4 +1,4 @@
-#mamazoe
+# mamazoe
 
 Primeira versão do site mamazoe, criado em pug/react, pelo template localizado no repl.it
 
