@@ -1,7 +1,6 @@
 # mamazoe
 
-Primeira versão do site mamazoe, criado em pug/react, pelo template localizado no repl.it
+Site criado em PUG/React, pelo template localizado no [repl.it](repl.it). A estrutura foi baseada no template de [Coming Soon](https://www.w3schools.com/howto/howto_css_coming_soon.asp), da W3 Schools.
 
-A estrutura foi baseada no template de Comming Soon, da W3 Schools.
-
+### creditos
 2021. clcmo e stdurb. Todos os direitos reservados.
