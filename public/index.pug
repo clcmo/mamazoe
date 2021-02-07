@@ -1,29 +1,11 @@
-//- Set the doctype to HTML.
-doctype html
-head
-  meta(charset='utf-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  title Mamazoe
-  meta(name='description' content='')
-  meta(name='viewport' content='width=device-width, initial-scale=1')
-  // Importing CSSs
-  link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
-  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway')
-  link(rel='stylesheet' href='css/style.css')
+include layout/head.pug
 body
   .bgimg.w3-display-container.w3-animate-opacity.w3-text-white
-  .w3-display-topleft.w3-padding-large.w3-xlarge.brand
-    
+  .w3-display-topleft.w3-padding-large.w3-xlarge
+    img.brand(src='images/mamazoe.png' alt='mamazoe' width='120px' height='40px')
   .w3-display-middle
-    // Newsletter
+    // Form or Error Message
     .w3-container
       .w3-panel.w3-padding-16.w3-black.w3-opacity.w3-card.w3-hover-opacity-off
-        h2 Estamos chegando!
-        p Conheça o que melhor oferecemos para seu melhor amigo.
-        form(action='/team_name_url/' method='post')
-          label E-mail
-          input.w3-input.w3-border(type='text' placeholder='Informe seu e-mail')
-          button.w3-button.w3-red.w3-margin-top(type='button') Inscreva-se
-  .w3-display-bottomleft.w3-padding-large
-    | Powered by 
-    a(href='#' target='_blank' style='text-transform:bold') stdurb
+        include includes/verify.pug
+  include layout/footer.pug
